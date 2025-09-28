@@ -7,7 +7,6 @@ Technologie: HTML, CSS (TailwindCSS), JavaScript
 
 - Responsywny layout
 - Animacje elementów przy ładowaniu strony
-- Dynamiczna zmiana koloru avatara po wyborze użytkownika
 
 ## Jak uruchomić
 
