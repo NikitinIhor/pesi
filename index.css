@@ -1,0 +1,55 @@
+@import "./assets/styles/reset.css";
+@import "./assets/styles/container.css";
+
+body {
+  background: rgba(249, 250, 252, 1);
+  color: rgba(32, 32, 32, 1);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+}
+
+html,
+body {
+  height: 100%;
+}
+/* --------------------------animation */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.appear {
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

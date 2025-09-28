@@ -5,9 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Zadanie rekrutacyjne pesi</title>
 
+    <link rel="icon" href="public/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Rubik", "ui-sans-serif", "system-ui"],
+              nunito: ["Nunito", "ui-sans-serif", "system-ui"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body">
-    <h1>sdsdsdsd</h1>
+  <body class="appear">
+    <header>
+      <nav
+        class="px-5 h-[64px] bg-white flex items-center justify-between shadow-[0_4px_6px_rgba(6,45,94,0.1)]"
+      >
+        <img src="./assets/images/logo.png" alt="logo" />
+
+        <div class="flex justify-center items-center gap-1 md:gap-3">
+          <div
+            id="avatarIcon"
+            class="w-10 h-10 flex justify-center items-center rounded-full bg-purple-200 p-1"
+          >
+            <img
+              src="./assets/images/avatar.png"
+              alt="avatar"
+              class="w-full h-full rounded-full"
+            />
+          </div>
+
+          <select
+            id="userSelect"
+            class="cursor-pointer font-nunito focus:outline-none"
+          >
+            <option value="Basia">Basia</option>
+            <option value="Kaja">Kaja</option>
+            <option value="Magda">Magda</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container">
+        <div
+          class="pt-8 flex flex-col md:flex-row justify-between items-start mb-8"
+        >
+          <div class="relative">
+            <h4 class="text-xl md:text-[26px] mb-5">Materiały edukacyjne</h4>
+            <small
+              class="absolute top-0 right-[10px] md:right-[-20px] text-base font-nunito font-400 text-[rgba(145,145,145,1)]"
+              >(456)</small
+            >
+            <p
+              class="font-nunito font-400 text-base text-[rgba(88,86,86,1)] mb-5"
+            >
+              Wczesnoszkolni.pl - Materiały edukacyjne
+            </p>
+          </div>
+          <div class="relative w-full md:w-[270px] flex items-center">
+            <label for="search" class="sr-only">Szukaj</label>
+            <input
+              id="search"
+              type="text"
+              placeholder="Szukaj"
+              class="w-full h-10 rounded-[5px] bg-white pl-3 pr-10 shadow-[0_4px_6px_rgba(6,45,94,0.1)] placeholder:text-[rgba(88,86,86,1)] font-nunito font-400 focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-300"
+            />
+            <div
+              class="absolute top-1/2 right-3 w-5 h-5 transform -translate-y-1/2 stroke-current text-gray-500"
+            >
+              <img src="./assets/icons/search.svg" alt="search icon" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-[80px] xl:pb-[331px]">
+        <div class="container">
+          <ul
+            class="flex flex-col xl:flex-row justify-between items-center gap-5 md:gap-[30px]"
+          >
+            <li class="h-[400px] fade-in" style="--delay: 0.5s">
+              <article
+                class="w-[300px] md:w-[370px] h-[280px] pt-12 bg-[url('./assets/images/bg.png')] bg-cover bg-center relative flex flex-col items-center justify-center text-center mb-8 md:mb-[60px]"
+              >
+                <h5 class="text-white text-[22px] mb-[18px]">
+                  Inspiracje plastyczne
+                </h5>
+                <div class="border-2 border-green-600 py-1 pl-3">
+                  <div class="border-2 border-green-600">
+                    <img src="./assets/images/bird.png" alt="image of sowa" />
+                  </div>
+                </div>
+              </article>
+
+              <div class="flex items-center gap-5">
+                <div
+                  class="w-16 h-16 bg-[rgba(173,78,236,0.1)] flex justify-center items-center rounded-full"
+                >
+                  <img src="./assets/icons/pencil.svg" alt="pencil image" />
+                </div>
+                <p class="text-[20px]">Karty pracy</p>
+              </div>
+            </li>
+            <li class="h-[400px] fade-in" style="--delay: 0.6s">
+              <article
+                class="w-[300px] md:w-[370px] h-[280px] pt-12 bg-[url('./assets/images/bg.png')] bg-cover bg-center relative flex flex-col items-center justify-center text-center mb-8 md:mb-[60px]"
+              >
+                <h5 class="text-white text-[22px] mb-[18px]">
+                  Inspiracje plastyczne
+                </h5>
+                <div class="border-2 border-green-600 py-1 pl-3">
+                  <div class="border-2 border-green-600">
+                    <img src="./assets/images/bird.png" alt="image of sowa" />
+                  </div>
+                </div>
+              </article>
+
+              <div class="flex items-center gap-5">
+                <div
+                  class="w-16 h-16 bg-[rgba(78,162,236,0.1)] flex justify-center items-center rounded-full"
+                >
+                  <img src="./assets/icons/brush.svg" alt="brush image" />
+                </div>
+                <p class="text-[20px]">Inspiracje plastyczne</p>
+              </div>
+            </li>
+            <li class="h-[400px] fade-in" style="--delay: 0.7s">
+              <article
+                class="w-[300px] md:w-[370px] h-[280px] pt-12 bg-[url('./assets/images/bg.png')] bg-cover bg-center relative flex flex-col items-center justify-center text-center mb-8 md:mb-[60px]"
+              >
+                <h5 class="text-white text-[22px] mb-[18px]">
+                  Inspiracje plastyczne
+                </h5>
+                <div class="border-2 border-green-600 py-1 pl-3">
+                  <div class="border-2 border-green-600">
+                    <img src="./assets/images/bird.png" alt="image of sowa" />
+                  </div>
+                </div>
+              </article>
+
+              <div class="flex items-center gap-5">
+                <div
+                  class="w-16 h-16 bg-[rgba(255,119,0,0.1)] flex justify-center items-center rounded-full"
+                >
+                  <img src="./assets/icons/award.svg" alt="award image" />
+                </div>
+                <p class="text-[20px]">Dyplomy i podziękowania</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
   </body>
 </html>
