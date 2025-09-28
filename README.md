@@ -1,8 +1,15 @@
 # Zadanie rekrutacyjne
 
 Projekt stworzony na podstawie designu w Figma.  
-Technologie: HTML oraz TailwindCSS
+Technologie: HTML, CSS (TailwindCSS), JavaScript
+
+## Funkcjonalności
+
+- Responsywny layout
+- Animacje elementów przy ładowaniu strony
+- Dynamiczna zmiana koloru avatara po wyborze użytkownika
 
 ## Jak uruchomić
 
-Otwórz plik `index.html` w przeglądarce.
+1. Sklonuj repozytorium lub pobierz pliki.
+2. Otwórz plik `index.html` w przeglądarce.
